@@ -81,6 +81,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Proje.Business\Proje.Business.csproj">
+      <Project>{b8cbb370-6de5-49cc-94cf-3fc361a5416e}</Project>
+      <Name>Proje.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proje.DataAccess\Proje.DataAccess.csproj">
+      <Project>{1bbb7262-e9f6-4881-a87a-2160c84241e9}</Project>
+      <Name>Proje.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
