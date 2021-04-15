@@ -21,5 +21,13 @@ namespace Proje.Business
             ent.user.Add(kullanici);
             ent.SaveChanges();
         }
+
+        public static void KullaniciAdiDegistir(string eskiKullaniciAdi, string yeniKullaniciAdi)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            var kullanici = ent.user.Where(p => p.display_name == eskiKullaniciAdi).FirstOrDefault();
+            kullanici.display_name = yeniKullaniciAdi;
+            ent.SaveChanges();
+        }
     }
 }
