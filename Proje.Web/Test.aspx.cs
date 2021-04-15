@@ -65,5 +65,11 @@ namespace Proje.Web
             tbxLocation.Text = "";
             tbxClDisplayName.Text = "";
         }
+
+        protected void btnYaziYolla_Click(object sender, EventArgs e)
+        {
+            lbYazilar.Items.Add(new ListItem(tbxYazilar.Text));
+            tbxYazilar.Text = "";
+        }
     }
 }

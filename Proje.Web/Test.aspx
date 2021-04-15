@@ -60,6 +60,15 @@
             flex-direction:column;
             border:2px solid green;
         }
+        .update-paneli{
+            margin:10px;
+            padding:20px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            border:2px solid #0094ff;
+        }
     </style>
 </head>
 <body>
@@ -136,6 +145,20 @@
                 <asp:TextBox ID="tbxLocation" runat="server"></asp:TextBox>
             </div>
             <asp:Button ID="btnLokasyonDegistir" runat="server" Text="Change" OnClick="btnLokasyonDegistir_Click" />
+        </div>
+
+        <div class="update-paneli">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="false" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <asp:TextBox ID="tbxYazilar" runat="server"></asp:TextBox>
+                    <asp:ListBox ID="lbYazilar" runat="server" Height="115px" Width="331px"></asp:ListBox>
+                </ContentTemplate>
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="btnYaziYolla" EventName="Click" />
+                </Triggers>
+            </asp:UpdatePanel>
+            <asp:Button ID="btnYaziYolla" runat="server" Text="Yazi Ekle" OnClick="btnYaziYolla_Click" />
         </div>
     </form>
 </body>
