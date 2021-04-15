@@ -21,5 +21,18 @@ namespace Proje.Web
             grdKullanicilar.DataSource = kullanicilar;
             grdKullanicilar.DataBind();
         }
+
+        protected void btnKullaniciEkle_Click(object sender, EventArgs e)
+        {
+            Proje.DataAccess.user yeniKullanici = new DataAccess.user();
+            yeniKullanici.display_name = tbxDisplayName.Text;
+            yeniKullanici.email = tbxEmail.Text;
+            yeniKullanici.password = tbxPassword.Text;
+            Proje.Business.Kullanici.KullaniciEkle(yeniKullanici);
+            tbxDisplayName.Text = "";
+            tbxEmail.Text = "";
+            tbxPassword.Text = "";
+
+        }
     }
 }
