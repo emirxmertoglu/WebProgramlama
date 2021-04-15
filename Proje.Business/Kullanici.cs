@@ -14,5 +14,12 @@ namespace Proje.Business
             var sonuc = ent.user.ToList();
             return sonuc;
         }
+
+        public static void KullaniciEkle(Proje.DataAccess.user kullanici)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            ent.user.Add(kullanici);
+            ent.SaveChanges();
+        }
     }
 }
