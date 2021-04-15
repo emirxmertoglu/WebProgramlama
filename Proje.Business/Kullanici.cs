@@ -37,5 +37,21 @@ namespace Proje.Business
             ent.user.Remove(kullanici);
             ent.SaveChanges();
         }
+
+        public static void KullaniciSifresiDegistir(string kullaniciAdi, string yeniSifre)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            var kullanici = ent.user.Where(p => p.display_name == kullaniciAdi).FirstOrDefault();
+            kullanici.password = yeniSifre;
+            ent.SaveChanges();
+        }
+
+        public static void KullaniciLokasyonuDegistir(string kullaniciAdi, string lokasyon)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            var kullanici = ent.user.Where(p => p.display_name == kullaniciAdi).FirstOrDefault();
+            kullanici.location = lokasyon;
+            ent.SaveChanges();
+        }
     }
 }
