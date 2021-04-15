@@ -41,5 +41,11 @@ namespace Proje.Web
             tbxOldDisplayName.Text = "";
             tbxNewDisplayName.Text = "";
         }
+
+        protected void btnKullaniciSil_Click(object sender, EventArgs e)
+        {
+            Proje.Business.Kullanici.KullaniciSil(tbxDelDisplayName.Text);
+            tbxDelDisplayName.Text = "";
+        }
     }
 }

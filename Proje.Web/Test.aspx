@@ -33,6 +33,15 @@
             flex-direction:column;
             border:2px solid #0094ff;
         }
+        .kullanici-sil{
+            margin:10px;
+            padding:20px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            border:2px solid #ff00dc;
+        }
     </style>
 </head>
 <body>
@@ -70,6 +79,15 @@
                 <asp:TextBox ID="tbxNewDisplayName" runat="server"></asp:TextBox>
             </div>
             <asp:Button ID="btnKullaniciAdiDegistir" runat="server" Text="Change" OnClick="btnKullaniciAdiDegistir_Click" />
+        </div>
+
+        <div class="kullanici-sil">
+            <h2>Delete The User Via Display Name</h2>
+            <div>
+                <span>Display Name</span>
+                <asp:TextBox ID="tbxDelDisplayName" runat="server"></asp:TextBox>
+            </div>
+            <asp:Button ID="btnKullaniciSil" runat="server" Text="Delete" OnClick="btnKullaniciSil_Click" />
         </div>
     </form>
 </body>
