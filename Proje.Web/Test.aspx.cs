@@ -47,5 +47,23 @@ namespace Proje.Web
             Proje.Business.Kullanici.KullaniciSil(tbxDelDisplayName.Text);
             tbxDelDisplayName.Text = "";
         }
+
+        protected void btnSifreDegistir_Click(object sender, EventArgs e)
+        {
+            if (tbxChangePassword.Text == tbxReChangePassword.Text)
+            {
+                Proje.Business.Kullanici.KullaniciSifresiDegistir(tbxCpDisplayName.Text, tbxChangePassword.Text);
+                tbxCpDisplayName.Text = "";
+                tbxChangePassword.Text = "";
+                tbxReChangePassword.Text = "";
+            }
+        }
+
+        protected void btnLokasyonDegistir_Click(object sender, EventArgs e)
+        {
+            Proje.Business.Kullanici.KullaniciLokasyonuDegistir(tbxClDisplayName.Text, tbxLocation.Text);
+            tbxLocation.Text = "";
+            tbxClDisplayName.Text = "";
+        }
     }
 }

@@ -42,6 +42,24 @@
             flex-direction:column;
             border:2px solid #ff00dc;
         }
+        .kullanici-sifre-degistir{
+            margin:10px;
+            padding:20px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            border:2px solid #00ffff;
+        }
+        .kullanici-lokasyonu-degistir{
+            margin:10px;
+            padding:20px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            border:2px solid green;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +106,36 @@
                 <asp:TextBox ID="tbxDelDisplayName" runat="server"></asp:TextBox>
             </div>
             <asp:Button ID="btnKullaniciSil" runat="server" Text="Delete" OnClick="btnKullaniciSil_Click" />
+        </div>
+
+        <div class="kullanici-sifre-degistir">
+            <h2>Change Password</h2>
+            <div>
+                <span>User Display Name</span>
+                <asp:TextBox ID="tbxCpDisplayName" runat="server"></asp:TextBox>
+            </div>
+            <div>
+                <span>New Password</span>
+                <asp:TextBox ID="tbxChangePassword" runat="server" TextMode="Password"></asp:TextBox>
+            </div>
+            <div>
+                <span>Re-Password</span>
+                <asp:TextBox ID="tbxReChangePassword" runat="server" TextMode="Password"></asp:TextBox>
+            </div>
+            <asp:Button ID="btnSifreDegistir" runat="server" Text="Change" OnClick="btnSifreDegistir_Click" />
+        </div>
+
+        <div class="kullanici-lokasyonu-degistir">
+            <h2>Change Location</h2>
+            <div>
+                <span>Display Name</span>
+                <asp:TextBox ID="tbxClDisplayName" runat="server"></asp:TextBox>
+            </div>
+            <div>
+                <span>Lokasyon</span>
+                <asp:TextBox ID="tbxLocation" runat="server"></asp:TextBox>
+            </div>
+            <asp:Button ID="btnLokasyonDegistir" runat="server" Text="Change" OnClick="btnLokasyonDegistir_Click" />
         </div>
     </form>
 </body>
