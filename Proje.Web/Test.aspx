@@ -24,6 +24,15 @@
             flex-direction:column;
             border:2px solid #ff006e;
         }
+        .kullanici-adi-degistir{
+            margin:10px;
+            padding:20px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            border:2px solid #0094ff;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +41,7 @@
             <asp:Button ID="btnKullaniciGetir" runat="server" Text="Get Users" OnClick="btnKullaniciGetir_Click" />
             <asp:GridView ID="grdKullanicilar" runat="server"></asp:GridView>
         </div>
+
         <div class="kullanici-ekle">
             <h2>Add New User</h2>
             <div>
@@ -47,6 +57,19 @@
                 <asp:TextBox ID="tbxPassword" runat="server" TextMode="Password"></asp:TextBox>
             </div>
             <asp:Button ID="btnKullaniciEkle" runat="server" Text="Add The User" OnClick="btnKullaniciEkle_Click" />
+        </div>
+
+        <div class="kullanici-adi-degistir">
+            <h2>Change Display Name</h2>
+            <div>
+                <span>Old Display Name</span>
+                <asp:TextBox ID="tbxOldDisplayName" runat="server"></asp:TextBox>
+            </div>
+            <div>
+                <span>New Display Name</span>
+                <asp:TextBox ID="tbxNewDisplayName" runat="server"></asp:TextBox>
+            </div>
+            <asp:Button ID="btnKullaniciAdiDegistir" runat="server" Text="Change" OnClick="btnKullaniciAdiDegistir_Click" />
         </div>
     </form>
 </body>

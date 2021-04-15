@@ -34,5 +34,12 @@ namespace Proje.Web
             tbxPassword.Text = "";
 
         }
+
+        protected void btnKullaniciAdiDegistir_Click(object sender, EventArgs e)
+        {
+            Proje.Business.Kullanici.KullaniciAdiDegistir(tbxOldDisplayName.Text, tbxNewDisplayName.Text);
+            tbxOldDisplayName.Text = "";
+            tbxNewDisplayName.Text = "";
+        }
     }
 }
