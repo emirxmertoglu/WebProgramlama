@@ -29,5 +29,13 @@ namespace Proje.Business
             kullanici.display_name = yeniKullaniciAdi;
             ent.SaveChanges();
         }
+
+        public static void KullaniciSil(string kullaniciAdi)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            var kullanici = ent.user.Where(p => p.display_name == kullaniciAdi).FirstOrDefault();
+            ent.user.Remove(kullanici);
+            ent.SaveChanges();
+        }
     }
 }
