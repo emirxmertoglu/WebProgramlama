@@ -16,6 +16,7 @@ namespace Proje.Web
             route.MapPageRoute("Sorular", "Sorular", "~/Sorular.aspx");
             route.MapPageRoute("Giris", "Giris", "~/Giris.aspx");
             route.MapPageRoute("Kayit", "Kayit", "~/Kayit.aspx");
+            route.MapPageRoute("Profil", "Profil", "~/Profil.aspx");
         }
         protected void Application_Start(object sender, EventArgs e)
         {
