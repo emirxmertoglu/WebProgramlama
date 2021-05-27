@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stack Overflow - Where Developers Learn, Share, &amp; Build Careers</title>
+    <title>Soru&Cevap Platformu - Sorular</title>
     <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
     <link rel="apple-touch-icon"
         href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a">
@@ -25,7 +25,7 @@
         <div class="nav-container">
             <nav>
                 <div class="nav-brand">
-                    <a href="#" class="nav-icon">
+                    <a href="./Anasayfa" class="nav-icon">
                         <i class="fab fa-stack-overflow"></i>
                         <div class="nav-icon-text"><span class="nav-bold-text">soru&cevap</span> platformu
                         </div>
@@ -61,11 +61,11 @@
     <div class="soru">
         <div class="container">
             <nav class="sidebar">
-                <a href="#" class="home">Anasayfa</a>
+                <a href="./Anasayfa" class="home">Anasayfa</a>
                 <h5>Genel</h5>
                 <ul>
                     <li class="active">
-                        <a href="#">
+                        <a href="./Sorular">
                             <i class="fas fa-globe-europe"></i>
                             Sorular
                         </a>

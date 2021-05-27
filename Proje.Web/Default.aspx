@@ -34,12 +34,12 @@
                             <div class="line"></div>
                         </div>
                         <div class="nav-dropdown-menu">
-                            <a href="#" class="current-link">Anasayfa</a>
+                            <a href="./Anasayfa" class="current-link">Anasayfa</a>
                             <h5>Genel</h5>
                             <ul class="nav-ul">
                                 <li class="nav-item">
                                     <i class="fas fa-globe-europe"></i>
-                                    <a href="#" class="nav-link">Sorular</a>
+                                    <a href="./Sorular" class="nav-link">Sorular</a>
                                 </li>
                                 <li class="nav-item"><a href="#" class="nav-link">Etiketler</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Kullanıcılar</a></li>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="nav-icon">
+                    <a href="./Anasayfa" class="nav-icon">
                         <i class="fab fa-stack-overflow"></i>
                         <div class="nav-icon-text"><span class="nav-bold-text">soru&cevap</span> platformu
                         </div>
@@ -80,8 +80,8 @@
                     </div>
 
 
-                    <a href="#" class="btn btn-login">Giriş</a>
-                    <a href="#" class="btn btn-register">Kayıt Ol</a>
+                    <a href="./Giris" class="btn btn-login">Giriş</a>
+                    <a href="./Kayit" class="btn btn-register">Kayıt Ol</a>
                 </div>
             </nav>
         </div>
@@ -97,7 +97,7 @@
                 platform kurduk.
             </p>
             <div class="hero-options">
-                <a href="#" class="btn btn-businesses">Sorulan sorular</a>
+                <a href="./Sorular" class="btn btn-businesses">Sorulan sorular</a>
             </div>
         </div>
     </section>
