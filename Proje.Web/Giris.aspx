@@ -36,7 +36,7 @@
 						alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" runat="server">
 					<span class="login100-form-title">
 						Üye Girişi
 					</span>
@@ -59,9 +59,10 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+                        <asp:Button ID="btnGiris" runat="server" Text="Giriş" class="login100-form-btn" />
+						<%--<button class="login100-form-btn">
 							Giriş
-						</button>
+						</button>--%>
 					</div>
 
 					<!-- <div class="text-center p-t-12">

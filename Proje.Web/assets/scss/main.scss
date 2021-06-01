@@ -1365,10 +1365,36 @@ nav {
   }
 
   // SORULAR
+  .saga-yasla {
+    width: 200px;
+    min-width: 200px;
+    margin-left: auto;
+    .detay-zaman {
+      font-size: 12px;
+    }
+    .detay-soran {
+      margin-top: 10px;
+      a {
+        display: flex;
+        align-items: center;
+        color: var(--blue-700);
+        i {
+          font-size: 20px;
+          margin-right: 4px;
+        }
+        .kullanici {
+          font-size: 12px;
+        }
+      }
+    }
+  }
   .sorular {
     flex: 1;
     padding: 0 15px;
     .soru-header {
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid var(--black-500);
       .soru-header-baslik {
         display: flex;
         justify-content: space-between;
@@ -1384,9 +1410,6 @@ nav {
         }
       }
       .soru-sayisi {
-        padding-bottom: 8px;
-        margin-bottom: 8px;
-        border-bottom: 1px solid var(--black-500);
         span {
           font-size: 18px;
           color: var(--black-800);
@@ -1429,27 +1452,56 @@ nav {
         .detay-etiket {
           margin-bottom: 8px;
         }
-        .saga-yasla {
-          width: 200px;
-          min-width: 200px;
-          margin-left: auto;
-          .detay-zaman {
-            font-size: 12px;
-          }
-          .detay-soran {
-            margin-top: 10px;
-            a {
-              display: flex;
-              align-items: center;
-              color: var(--blue-700);
-              i {
-                font-size: 20px;
-                margin-right: 4px;
-              }
-              .kullanici {
-                font-size: 12px;
-              }
+      }
+    }
+    .cevapli-soru {
+      .soru {
+        .soru-detayi {
+          font-size: 15px;
+          line-height: 22.5px;
+        }
+        .soru-etiketleri {
+          margin: 25px 0;
+          ul {
+            display: flex;
+            li {
+              margin: 0 1px;
             }
+          }
+        }
+      }
+      .cevaplar {
+        h2 {
+          font-size: 18px;
+          line-height: 23.4px;
+          color: var(--black-800);
+          font-weight: normal;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+          border-bottom: 1px solid var(--black-500);
+        }
+        .cevap-detay {
+          margin-bottom: 25px;
+          .cevap {
+            font-size: 15px;
+            line-height: 22.5px;
+          }
+        }
+        .cevapla {
+          textarea {
+            width: 100%;
+            height: 200px;
+            font-size: 15px;
+            line-height: 22.5px;
+            margin: 0;
+            padding: 20px;
+          }
+          .btn-cevap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+            height: 40px;
           }
         }
       }
