@@ -110,6 +110,7 @@
     <Content Include="Login_v1\vendor\select2\select2.min.js" />
     <Content Include="Login_v1\vendor\tilt\tilt.jquery.min.js" />
     <Content Include="Profil.aspx" />
+    <Content Include="SoruSor.aspx" />
     <Content Include="SorularCevaplar.aspx" />
     <Content Include="Sorular.aspx" />
     <Content Include="Test.aspx" />
@@ -149,6 +150,13 @@
       <DependentUpon>Profil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoruSor.aspx.cs">
+      <DependentUpon>SoruSor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoruSor.aspx.designer.cs">
+      <DependentUpon>SoruSor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SorularCevaplar.aspx.cs">
       <DependentUpon>SorularCevaplar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
