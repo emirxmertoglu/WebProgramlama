@@ -62,16 +62,26 @@
         <div class="container">
             <h2>Herkese açık bir soru sorun</h2>
             <div class="soru-card">
-                <h3>Başlık</h3>
-                <p>Spesifik olun ve başka birine soru sorduğunuzu hayal edin</p>
-                <input type="text" name="soru-title" id="" placeholder="örn. Jquery çoklu fotoğraf yükleme hakkında">
-                <h3>Detay</h3>
-                <p>Birinin sorunuzu yanıtlamak için ihtiyaç duyacağı tüm bilgileri ekleyin</p>
-                <textarea name="soru-detay" id="" cols="30" rows="10"></textarea>
-                <h3>Etiketler</h3>
-                <p>Sorunuzun ne hakkında olduğunu açıklamak için en fazla 5 etiket ekleyin</p>
-                <input type="text" name="tagler" id="" placeholder="örn. (javascript, jquery, asp.net)">
+                <div>
+                    <h3>Başlık</h3>
+                    <p>Spesifik olun ve başka birine soru sorduğunuzu hayal edin</p>
+                    <div class="search-container"><input type="text" name="soru-title" id=""
+                            placeholder="örn. Jquery çoklu fotoğraf yükleme hakkında"></div>
+                </div>
+                <div>
+                    <h3>Detay</h3>
+                    <p>Birinin sorunuzu yanıtlamak için ihtiyaç duyacağı tüm bilgileri ekleyin</p>
+                    <div class="search-container"><textarea name="soru-detay" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <h3>Etiketler</h3>
+                    <p>Sorunuzun ne hakkında olduğunu açıklamak için en fazla 5 etiket ekleyin</p>
+                    <div class="search-container"><input type="text" name="tagler" id=""
+                            placeholder="örn. (javascript, jquery, asp.net)"></div>
+                </div>
             </div>
+            <a href="#" class="btn btn-register btn-soru-sor">Soru Sor</a>
         </div>
     </div>
 
