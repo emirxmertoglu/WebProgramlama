@@ -114,8 +114,11 @@
     <Content Include="SorularCevaplar.aspx" />
     <Content Include="Sorular.aspx" />
     <Content Include="Test.aspx" />
+    <Content Include="Test2.aspx" />
+    <Content Include="test3.aspx" />
     <Content Include="veritabani_diyagrami.jpg" />
     <Content Include="Web.config" />
+    <Content Include="WebServis\test.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -177,6 +180,24 @@
     </Compile>
     <Compile Include="Test.aspx.designer.cs">
       <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test2.aspx.cs">
+      <DependentUpon>Test2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test2.aspx.designer.cs">
+      <DependentUpon>Test2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test3.aspx.cs">
+      <DependentUpon>test3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test3.aspx.designer.cs">
+      <DependentUpon>test3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebServis\test.asmx.cs">
+      <DependentUpon>test.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

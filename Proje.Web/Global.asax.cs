@@ -19,6 +19,7 @@ namespace Proje.Web
             route.MapPageRoute("Profil", "Profil", "~/Profil.aspx");
             route.MapPageRoute("Cevaplar", "Cevaplar", "~/SorularCevaplar.aspx");
             route.MapPageRoute("SoruSor", "SoruSor", "~/SoruSor.aspx");
+            route.MapPageRoute("Test3", "Detay/{MusteriID}/{UrunID}", "~/Test3.aspx");
         }
         protected void Application_Start(object sender, EventArgs e)
         {
