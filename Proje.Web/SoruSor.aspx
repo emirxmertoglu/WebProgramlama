@@ -39,7 +39,7 @@
                 <div class="nav-search">
                     <div class="search-container">
                         <i class="fas fa-search"></i>
-                        <input type="text" id="" placeholder="Search...">
+                        <input type="text" id="" placeholder="Ara...">
                     </div>
                 </div>
                 <div class="nav-right-buttons">
