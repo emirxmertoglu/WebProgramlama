@@ -114,6 +114,7 @@
                 <%--<button class="btn border button">Vazgeç</button>--%>
                 <asp:Button ID="btn_kaydet" runat="server" Text="Değişikleri Kaydet" class="btn btn-primary mr-3" OnClick="btn_kaydet_Click" />
                 <a href="../Sorular" class="btn border button">Vazgeç</a>
+                <asp:Button ID="btn_oturumKapat" runat="server" Text="Oturumu Sonlandır" class="btn danger" OnClick="btn_oturumKapat_Click" />
             </div>
             <div class="d-sm-flex align-items-center pt-3" id="deactivate">
                 <div> <b>Üyelik silme</b>

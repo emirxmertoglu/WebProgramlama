@@ -71,7 +71,7 @@
                         </a>
                     </li>
                     <li><a href="#">Etiketler</a></li>
-                    <li><a href="#">Kullanıcılar</a></li>
+                    <li><a href="https://localhost:44325/WebServis/api.asmx?op=tumKullanicilariGetir">Kullanıcılar</a></li>
                 </ul>
                 <h5>İş</h5>
                 <ul>

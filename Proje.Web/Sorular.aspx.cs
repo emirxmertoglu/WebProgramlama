@@ -19,7 +19,7 @@ namespace Proje.Web
 
         protected void lb_profileYonlendir_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Profil/" + Session["kullaniciID"].ToString() + "-" + Session["kullaniciNick"].ToString());
+            Response.Redirect("/Profil/" + Session["kullaniciID"].ToString() + "/" + Session["kullaniciNick"].ToString());
         }
 
     }

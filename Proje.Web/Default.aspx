@@ -42,7 +42,7 @@
                                     <a href="./Sorular" class="nav-link">Sorular</a>
                                 </li>
                                 <li class="nav-item"><a href="#" class="nav-link">Etiketler</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Kullanıcılar</a></li>
+                                <li class="nav-item"><a href="https://localhost:44325/WebServis/api.asmx?op=tumKullanicilariGetir" class="nav-link">Kullanıcılar</a></li>
                             </ul>
                             <h5>İş</h5>
                             <ul class="nav-ul">
