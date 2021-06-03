@@ -44,7 +44,6 @@
 					<div class="wrap-input100 validate-input"
 						data-validate="Geçerli bir email girilmelidir: ornek@abc.xyz">
                         <asp:TextBox ID="tbx_email" runat="server" class="input100" type="text" name="email" placeholder="Email"></asp:TextBox>
-						<%--<input class="input100" type="text" name="email" placeholder="Email">--%>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -53,7 +52,6 @@
 
 					<div class="wrap-input100 validate-input" data-validate="Şifre gereklidir">
                         <asp:TextBox ID="tbx_password" runat="server" class="input100" type="password" name="pass" placeholder="Şifre"></asp:TextBox>
-						<%--<input class="input100" type="password" name="pass" placeholder="Şifre">--%>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -62,19 +60,7 @@
 
 					<div class="container-login100-form-btn">
                         <asp:Button ID="btnGiris" runat="server" Text="Giriş" class="login100-form-btn" OnClick="btnGiris_Click" />
-						<%--<button class="login100-form-btn">
-							Giriş
-						</button>--%>
 					</div>
-
-					<!-- <div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="#">
-							Username / Password?
-						</a>
-					</div> -->
 
 					<div class="text-center p-t-136">
 						<a class="txt2" href="./Kayit">
