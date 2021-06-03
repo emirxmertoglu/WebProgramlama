@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using System.Web.Script.Services;
 
 namespace Proje.Web.WebServis
 {
@@ -16,22 +17,24 @@ namespace Proje.Web.WebServis
     // [System.Web.Script.Services.ScriptService]
     public class test : System.Web.Services.WebService
     {
+        private DataSet1TableAdapters.userTableAdapter taTumKullanicilar = new DataSet1TableAdapters.userTableAdapter();
+        private DataSet1.userDataTable dtTumKullanicilar;
 
+        // Kullanicilari JSON olarak getir
         [WebMethod]
-        public string HelloWorld()
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public void tumKullanicilariGetir()
         {
-            return "Hello World";
+            Context.Response.Write(kullanicilariGetir());
         }
 
-        [WebMethod]
-        public List<string> sayilariGetir(int sayac)
+        private string kullanicilariGetir()
         {
-            var Veri = new List<string>();
-            for (int i = 0; i < sayac; i++)
-            {
-                Veri.Add(i.ToString());
-            }
-            return Veri;
+            dtTumKullanicilar = taTumKullanicilar.KullanicilariGetir();
+
+            string apiCevap = Newtonsoft.Json.JsonConvert.SerializeObject(dtTumKullanicilar);
+
+            return apiCevap;
         }
     }
 }
