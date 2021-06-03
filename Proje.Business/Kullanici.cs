@@ -74,5 +74,22 @@ namespace Proje.Business
             var kullanici = ent.user.Where(p => p.email == email).FirstOrDefault();
             return kullanici;
         }
+
+        public static void ProfilBilgileriKaydet(Proje.DataAccess.user user, int id)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            var kullanici = ent.user.Where(p => p.id == id).FirstOrDefault();
+            kullanici.email = user.email;
+            kullanici.password = user.password;
+            kullanici.display_name = user.display_name;
+            kullanici.full_name = user.full_name;
+            kullanici.location = user.location;
+            kullanici.title = user.title;
+            kullanici.about_me = user.about_me;
+            kullanici.website_link = user.website_link;
+            kullanici.twitter_link = user.twitter_link;
+            kullanici.github_link = user.github_link;
+            ent.SaveChanges();
+        }
     }
 }
