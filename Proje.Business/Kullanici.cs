@@ -30,10 +30,10 @@ namespace Proje.Business
             ent.SaveChanges();
         }
 
-        public static void KullaniciSil(string kullaniciAdi)
+        public static void KullaniciSil(int kullaniciID)
         {
             Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
-            var kullanici = ent.user.Where(p => p.display_name == kullaniciAdi).FirstOrDefault();
+            var kullanici = ent.user.Where(p => p.id == kullaniciID).FirstOrDefault();
             ent.user.Remove(kullanici);
             ent.SaveChanges();
         }
@@ -52,6 +52,27 @@ namespace Proje.Business
             var kullanici = ent.user.Where(p => p.display_name == kullaniciAdi).FirstOrDefault();
             kullanici.location = lokasyon;
             ent.SaveChanges();
+        }
+
+        public static string KullaniciSessionID(string kullaniciAdi)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            var kullanici = ent.user.Where(p => p.display_name == kullaniciAdi).FirstOrDefault();
+            return kullanici.id.ToString();
+        }
+
+        public static Proje.DataAccess.user KullaniciyiIDsindenGetir(int kullaniciID)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            var kullanici = ent.user.Where(p => p.id == kullaniciID).FirstOrDefault();
+            return kullanici;
+        }
+
+        public static Proje.DataAccess.user KullaniciGirisKontrol(string email)
+        {
+            Proje.DataAccess.WebProgramlamaEntities ent = new DataAccess.WebProgramlamaEntities();
+            var kullanici = ent.user.Where(p => p.email == email).FirstOrDefault();
+            return kullanici;
         }
     }
 }

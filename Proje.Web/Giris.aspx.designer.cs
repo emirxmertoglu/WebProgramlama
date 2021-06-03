@@ -15,6 +15,33 @@ namespace Proje.Web
     {
 
         /// <summary>
+        /// lbl_durum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_durum;
+
+        /// <summary>
+        /// tbx_email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbx_email;
+
+        /// <summary>
+        /// tbx_password control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbx_password;
+
+        /// <summary>
         /// btnGiris control.
         /// </summary>
         /// <remarks>

@@ -571,21 +571,21 @@ nav {
   background-color: var(--blue-600);
 }
 
-.nav-profile a {
+.nav-profile .nav-profile-kapsayici {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--black-600);
 }
-.nav-profile a i {
+.nav-profile .nav-profile-kapsayici i {
   font-size: 30px;
   margin-right: 5px;
 }
-.nav-profile a .nav-profile-name {
-  font-size: 12px;
+.nav-profile .nav-profile-kapsayici .nav-profile-name {
+  font-size: 14px;
   font-weight: normal;
 }
-.nav-profile a:hover {
+.nav-profile .nav-profile-kapsayici:hover {
   color: var(--black-900);
 }
 

@@ -560,7 +560,7 @@ nav {
   }
 }
 .nav-profile {
-  a {
+  .nav-profile-kapsayici {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -570,7 +570,7 @@ nav {
       margin-right: 5px;
     }
     .nav-profile-name {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: normal;
     }
     &:hover {

@@ -11,7 +11,16 @@ namespace Proje.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["kullaniciID"] != null && Session["kullaniciNick"] != null)
+            {
+                lbl_kullaniciAdi.Text = Session["kullaniciNick"].ToString();
+            }
         }
+
+        protected void lb_profileYonlendir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Profil/" + Session["kullaniciID"].ToString() + "-" + Session["kullaniciNick"].ToString());
+        }
+
     }
 }

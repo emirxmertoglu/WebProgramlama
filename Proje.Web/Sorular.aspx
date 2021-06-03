@@ -21,7 +21,8 @@
 
 <body>
 
-    <header class="non-fixed">
+    <form action="" runat="server">
+        <header class="non-fixed">
         <div class="nav-container">
             <nav>
                 <div class="nav-brand">
@@ -48,10 +49,24 @@
                     </div>
 
                     <div class="nav-profile">
-                        <a href="#">
+                        <%--<asp:HyperLink ID="hl_profileYonlendir" runat="server" CssClass="nav-profile-kapsayici">
                             <i class="fas fa-user-circle"></i>
-                            <span class="nav-profile-name">Kullanıcı Adı</span>
-                        </a>
+                            <span class="nav-profile-name">
+                                <asp:Label ID="lbl_kullaniciAdi" runat="server" Text="Üye Adı"></asp:Label>
+                            </span>
+                        </asp:HyperLink>--%>
+                        <asp:LinkButton ID="lb_profileYonlendir" runat="server" CssClass="nav-profile-kapsayici" OnClick="lb_profileYonlendir_Click">
+                            <i class="fas fa-user-circle"></i>
+                            <span class="nav-profile-name">
+                                <asp:Label ID="lbl_kullaniciAdi" runat="server" Text="Üye Adı"></asp:Label>
+                            </span>
+                        </asp:LinkButton>
+                        <%--<a href="#">
+                            <i class="fas fa-user-circle"></i>
+                            <span class="nav-profile-name">
+                                <asp:Label ID="lbl_kullaniciAdi" runat="server" Text="Üye Adı"></asp:Label>
+                            </span>
+                        </a>--%>
                     </div>
                 </div>
             </nav>
@@ -228,6 +243,7 @@
             </div>
         </div>
     </div>
+    </form>
 
     <script src="assets/js/main.js"></script>
 </body>
