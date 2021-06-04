@@ -92,7 +92,7 @@
                 <div class="soru-header">
                     <div class="soru-header-baslik">
                         <h2>Tüm Sorular</h2>
-                        <a href="#" class="btn btn-register btn-soru">Soru Sor</a>
+                        <a href="./SoruSor" class="btn btn-register btn-soru">Soru Sor</a>
                     </div>
                     <div class="soru-sayisi">
                         <span>21376821 soru soruldu</span>

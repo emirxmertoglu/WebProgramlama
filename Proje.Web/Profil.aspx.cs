@@ -62,5 +62,10 @@ namespace Proje.Web
             Response.Cookies.Clear();
             Response.Redirect("~/AnaSayfa");
         }
+
+        protected void lb_vazgec_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Sorular");
+        }
     }
 }

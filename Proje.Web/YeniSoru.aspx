@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SoruSor.aspx.cs" Inherits="Proje.Web.Sorular" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="YeniSoru.aspx.cs" Inherits="Proje.Web.YeniSoru" %>
 
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -18,10 +18,9 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-
-    <header class="non-fixed">
+    <form id="form1" runat="server">
+        <header class="non-fixed">
         <div class="nav-container">
             <nav>
                 <div class="nav-brand">
@@ -48,10 +47,12 @@
                     </div>
 
                     <div class="nav-profile">
-                        <a href="#">
+                        <asp:LinkButton ID="lb_profil" runat="server" CssClass="nav-profile-kapsayici" OnClick="lb_profil_Click">
                             <i class="fas fa-user-circle"></i>
-                            <span class="nav-profile-name">Kullanıcı Adı</span>
-                        </a>
+                            <span class="nav-profile-name">
+                                <asp:Label ID="lbl_ad" runat="server" Text="Üye Adı"></asp:Label>
+                            </span>
+                        </asp:LinkButton>
                     </div>
                 </div>
             </nav>
@@ -65,27 +66,37 @@
                 <div>
                     <h3>Başlık</h3>
                     <p>Spesifik olun ve başka birine soru sorduğunuzu hayal edin</p>
-                    <div class="search-container"><input type="text" name="soru-title" id=""
-                            placeholder="örn. Jquery çoklu fotoğraf yükleme hakkında"></div>
+                    <div class="search-container">
+                        <asp:TextBox ID="tbx_baslik" runat="server" type="text" name="soru-title" placeholder="örn. Jquery çoklu fotoğraf yükleme hakkında"></asp:TextBox>
+                        <%--<input type="text" name="soru-title" id=""
+                            placeholder="örn. Jquery çoklu fotoğraf yükleme hakkında">--%>
+
+                    </div>
                 </div>
                 <div>
                     <h3>Detay</h3>
                     <p>Birinin sorunuzu yanıtlamak için ihtiyaç duyacağı tüm bilgileri ekleyin</p>
-                    <div class="search-container"><textarea name="soru-detay" id="" cols="30" rows="10"></textarea>
+                    <div class="search-container">
+                        <asp:TextBox ID="tbx_detay" runat="server" name="soru-detay" Columns="30" Rows="10" TextMode="MultiLine"></asp:TextBox>
+                        <%--<textarea name="soru-detay" id="" cols="30" rows="10"></textarea>--%>
                     </div>
                 </div>
                 <div>
                     <h3>Etiketler</h3>
                     <p>Sorunuzun ne hakkında olduğunu açıklamak için en fazla 5 etiket ekleyin</p>
-                    <div class="search-container"><input type="text" name="tagler" id=""
-                            placeholder="örn. (javascript, jquery, asp.net)"></div>
+                    <div class="search-container">
+                        <asp:TextBox ID="tbx_tagler" runat="server" placeholder="örn. (javascript, jquery, asp.net)" ></asp:TextBox>
+                        <%--<input type="text" name="tagler" id=""
+                            placeholder="örn. (javascript, jquery, asp.net)">--%>
+
+                    </div>
                 </div>
             </div>
-            <a href="#" class="btn btn-register btn-soru-sor">Soru Sor</a>
+            <asp:LinkButton ID="lb_sor" runat="server" class="btn btn-register btn-soru-sor" OnClick="lb_sor_Click">Soru Sor</asp:LinkButton>
+            <%--<a href="#" class="btn btn-register btn-soru-sor">Soru Sor</a>--%>
         </div>
     </div>
-
+    </form>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>

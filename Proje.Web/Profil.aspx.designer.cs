@@ -114,6 +114,15 @@ namespace Proje.Web
         protected global::System.Web.UI.WebControls.Button btn_kaydet;
 
         /// <summary>
+        /// lb_vazgec control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_vazgec;
+
+        /// <summary>
         /// btn_oturumKapat control.
         /// </summary>
         /// <remarks>

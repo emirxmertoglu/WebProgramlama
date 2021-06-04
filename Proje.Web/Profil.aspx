@@ -84,7 +84,7 @@
             </div>
             <div class="py-3 pb-4 border-bottom">
                 <asp:Button ID="btn_kaydet" runat="server" Text="Değişikleri Kaydet" class="btn btn-primary mr-3" OnClick="btn_kaydet_Click" />
-                <a href="../Sorular" class="btn border button">Vazgeç</a>
+                <asp:LinkButton ID="lb_vazgec" runat="server" class="btn border button" OnClick="lb_vazgec_Click">Vazgeç</asp:LinkButton>
                 <asp:Button ID="btn_oturumKapat" runat="server" Text="Oturumu Sonlandır" class="btn danger" OnClick="btn_oturumKapat_Click" />
             </div>
             <div class="d-sm-flex align-items-center pt-3" id="deactivate">
